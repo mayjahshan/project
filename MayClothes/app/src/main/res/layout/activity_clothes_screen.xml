@@ -8,35 +8,985 @@
     android:theme="@style/AppTheme"
     tools:context=".ClothesScreen">
 
+    <!-- User Info ====================================== -->
+
+    <TextView
+        android:id="@+id/user"
+        android:layout_width="104dp"
+        android:layout_height="58dp"
+        android:fontFamily="casual"
+        android:text="User:"
+        android:textColor="#00897B"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="0dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/userN"
+        android:layout_width="104dp"
+        android:layout_height="58dp"
+        android:fontFamily="casual"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="0dp"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/userC"
+        android:layout_width="104dp"
+        android:layout_height="58dp"
+        android:fontFamily="casual"
+        android:text="From:"
+        android:textColor="#00897B"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="0dp"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/userCC"
+        android:layout_width="104dp"
+        android:layout_height="58dp"
+        android:fontFamily="casual"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="0dp"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0" />
+
+    <!-- ================================================ -->
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/buy"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/buy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ScrollView
-        android:layout_width="344dp"
-        android:layout_height="323dp"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="236dp">
+        android:layout_width="500dp"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="30dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="30dp">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- ====== Image1 ================== -->
+            <ScrollView
+                android:layout_width="500dp"
+                android:layout_height="match_parent"
+                tools:ignore="MissingConstraints"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="30dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="30dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+                    <android.support.v7.widget.AppCompatImageButton
+                        android:id="@+id/img1"
+                        android:layout_width="200dp"
+                        android:layout_height="180dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/i1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+
+                    <ScrollView
+                        android:layout_width="160dp"
+                        android:layout_height="match_parent"
+                        tools:ignore="MissingConstraints"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="0dp"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="30dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/im1p"
+                                android:layout_width="104dp"
+                                android:layout_height="87dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="casual"
+                                android:text="Price: 50 NIS\nSize: M\nColor: White"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.0" />
+
+                            <android.support.v7.widget.AppCompatImageButton
+                            android:id="@+id/buy1"
+                            android:layout_width="118dp"
+                            android:layout_height="35dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="0dp"
+                            android:background="@drawable/add_to_cart"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.0" />
+
+                            <android.support.v7.widget.AppCompatImageButton
+                                android:id="@+id/d1"
+                                android:layout_width="40dp"
+                                android:layout_height="45dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="0dp"
+                                android:background="@drawable/delete"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.0" />
+
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+            </ScrollView>
 
             <android.support.v7.widget.AppCompatImageButton
-                android:id="@+id/img1"
-                android:layout_width="290dp"
-                android:layout_height="220dp"
-                android:layout_marginBottom="8dp"
+                android:layout_width="350dp"
+                android:layout_height="43dp"
+                android:layout_marginBottom="0dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/i1"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/line"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" />
+                app:layout_constraintTop_toTopOf="parent" />
+            <!-- ====================================== -->
+
+            <!-- ====== Image2 ================== -->
+            <ScrollView
+                android:layout_width="500dp"
+                android:layout_height="match_parent"
+                tools:ignore="MissingConstraints"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="0dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="30dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+                    <android.support.v7.widget.AppCompatImageButton
+                        android:id="@+id/img2"
+                        android:layout_width="200dp"
+                        android:layout_height="180dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/i2"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+
+                    <ScrollView
+                        android:layout_width="160dp"
+                        android:layout_height="match_parent"
+                        tools:ignore="MissingConstraints"
+                        android:layout_marginBottom="0dp"
+                        android:layout_marginTop="0dp"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="30dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/im2p"
+                                android:layout_width="124dp"
+                                android:layout_height="87dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="casual"
+                                android:text="Price: 85 NIS\nSize: L\nColor: Dark Blue"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.0" />
+
+                            <android.support.v7.widget.AppCompatImageButton
+                                android:id="@+id/buy2"
+                                android:layout_width="118dp"
+                                android:layout_height="35dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="0dp"
+                                android:background="@drawable/add_to_cart"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.0" />
+
+                            <android.support.v7.widget.AppCompatImageButton
+                                android:id="@+id/d2"
+                                android:layout_width="40dp"
+                                android:layout_height="45dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="0dp"
+                                android:background="@drawable/delete"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.0" />
+
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+            </ScrollView>
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:layout_width="350dp"
+                android:layout_height="43dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/line"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <!-- ====================================== -->
+
+            <!-- ====== Image3 ================== -->
+            <ScrollView
+                android:layout_width="500dp"
+                android:layout_height="match_parent"
+                tools:ignore="MissingConstraints"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="0dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="30dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+                    <android.support.v7.widget.AppCompatImageButton
+                        android:id="@+id/img3"
+                        android:layout_width="200dp"
+                        android:layout_height="180dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/i3"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+
+                    <ScrollView
+                        android:layout_width="160dp"
+                        android:layout_height="match_parent"
+                        tools:ignore="MissingConstraints"
+                        android:layout_marginBottom="0dp"
+                        android:layout_marginTop="0dp"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="30dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/im3p"
+                                android:layout_width="124dp"
+                                android:layout_height="87dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="casual"
+                                android:text="Price: 100 NIS\nSize: S\nColor: Dark Blue"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.0" />
+
+                            <android.support.v7.widget.AppCompatImageButton
+                                android:id="@+id/buy3"
+                                android:layout_width="118dp"
+                                android:layout_height="35dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="0dp"
+                                android:background="@drawable/add_to_cart"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.0" />
+
+                            <android.support.v7.widget.AppCompatImageButton
+                                android:id="@+id/d3"
+                                android:layout_width="40dp"
+                                android:layout_height="45dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="0dp"
+                                android:background="@drawable/delete"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.0" />
+
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+            </ScrollView>
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:layout_width="350dp"
+                android:layout_height="43dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/line"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <!-- ====================================== -->
+
+            <!-- ====== Image4 ================== -->
+            <ScrollView
+                android:layout_width="500dp"
+                android:layout_height="match_parent"
+                tools:ignore="MissingConstraints"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="0dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="30dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+                    <android.support.v7.widget.AppCompatImageButton
+                        android:id="@+id/img4"
+                        android:layout_width="200dp"
+                        android:layout_height="180dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/i4"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+
+                    <ScrollView
+                        android:layout_width="160dp"
+                        android:layout_height="match_parent"
+                        tools:ignore="MissingConstraints"
+                        android:layout_marginBottom="0dp"
+                        android:layout_marginTop="0dp"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="30dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/im4p"
+                                android:layout_width="124dp"
+                                android:layout_height="87dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="casual"
+                                android:text="Price: 75 NIS\nSize: L\nColor: White , Blue"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.0" />
+
+                            <android.support.v7.widget.AppCompatImageButton
+                                android:id="@+id/buy4"
+                                android:layout_width="118dp"
+                                android:layout_height="35dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="0dp"
+                                android:background="@drawable/add_to_cart"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.0" />
+
+                            <android.support.v7.widget.AppCompatImageButton
+                                android:id="@+id/d4"
+                                android:layout_width="40dp"
+                                android:layout_height="45dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="0dp"
+                                android:background="@drawable/delete"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.0" />
+
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+            </ScrollView>
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:layout_width="350dp"
+                android:layout_height="43dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/line"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <!-- ====================================== -->
+
+            <!-- ====== Image5 ================== -->
+            <ScrollView
+                android:layout_width="500dp"
+                android:layout_height="match_parent"
+                tools:ignore="MissingConstraints"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="0dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="30dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+                    <android.support.v7.widget.AppCompatImageButton
+                        android:id="@+id/img5"
+                        android:layout_width="200dp"
+                        android:layout_height="180dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/i5"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+
+                    <ScrollView
+                        android:layout_width="160dp"
+                        android:layout_height="match_parent"
+                        tools:ignore="MissingConstraints"
+                        android:layout_marginBottom="0dp"
+                        android:layout_marginTop="0dp"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="30dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/im5p"
+                                android:layout_width="124dp"
+                                android:layout_height="87dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="casual"
+                                android:text="Price: 60 NIS\nSize: M\nColor: White , Blue"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.0" />
+
+                            <android.support.v7.widget.AppCompatImageButton
+                                android:id="@+id/buy5"
+                                android:layout_width="118dp"
+                                android:layout_height="35dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="0dp"
+                                android:background="@drawable/add_to_cart"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.0" />
+
+                            <android.support.v7.widget.AppCompatImageButton
+                                android:id="@+id/d5"
+                                android:layout_width="40dp"
+                                android:layout_height="45dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="0dp"
+                                android:background="@drawable/delete"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.0" />
+
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+            </ScrollView>
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:layout_width="350dp"
+                android:layout_height="43dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/line"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <!-- ====================================== -->
+
+            <!-- ====== Image6 ================== -->
+            <ScrollView
+                android:layout_width="500dp"
+                android:layout_height="match_parent"
+                tools:ignore="MissingConstraints"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="0dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="30dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+                    <android.support.v7.widget.AppCompatImageButton
+                        android:id="@+id/img6"
+                        android:layout_width="200dp"
+                        android:layout_height="180dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/i6"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+
+                    <ScrollView
+                        android:layout_width="160dp"
+                        android:layout_height="match_parent"
+                        tools:ignore="MissingConstraints"
+                        android:layout_marginBottom="0dp"
+                        android:layout_marginTop="0dp"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="30dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/im6p"
+                                android:layout_width="104dp"
+                                android:layout_height="87dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="casual"
+                                android:text="Price: 90 NIS\nSize: M\nColor: Cream"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.0" />
+
+                            <android.support.v7.widget.AppCompatImageButton
+                                android:id="@+id/buy6"
+                                android:layout_width="118dp"
+                                android:layout_height="35dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="0dp"
+                                android:background="@drawable/add_to_cart"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.0" />
+
+                            <android.support.v7.widget.AppCompatImageButton
+                                android:id="@+id/d6"
+                                android:layout_width="40dp"
+                                android:layout_height="45dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="0dp"
+                                android:background="@drawable/delete"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.0" />
+
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+            </ScrollView>
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:layout_width="350dp"
+                android:layout_height="43dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/line"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <!-- ====================================== -->
+
+            <!-- ====== Image7 ================== -->
+            <ScrollView
+                android:layout_width="500dp"
+                android:layout_height="match_parent"
+                tools:ignore="MissingConstraints"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="0dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="30dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+                    <android.support.v7.widget.AppCompatImageButton
+                        android:id="@+id/img7"
+                        android:layout_width="200dp"
+                        android:layout_height="180dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/i7"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+
+                    <ScrollView
+                        android:layout_width="160dp"
+                        android:layout_height="match_parent"
+                        tools:ignore="MissingConstraints"
+                        android:layout_marginBottom="0dp"
+                        android:layout_marginTop="0dp"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="30dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/im7p"
+                                android:layout_width="104dp"
+                                android:layout_height="87dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="casual"
+                                android:text="Price: 70 NIS\nSize: S\nColor: White"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.0" />
+
+                            <android.support.v7.widget.AppCompatImageButton
+                                android:id="@+id/buy7"
+                                android:layout_width="118dp"
+                                android:layout_height="35dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="0dp"
+                                android:background="@drawable/add_to_cart"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.0" />
+
+                            <android.support.v7.widget.AppCompatImageButton
+                                android:id="@+id/d7"
+                                android:layout_width="40dp"
+                                android:layout_height="45dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="0dp"
+                                android:background="@drawable/delete"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.0" />
+
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+            </ScrollView>
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:layout_width="350dp"
+                android:layout_height="43dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/line"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <!-- ====================================== -->
+
         </LinearLayout>
     </ScrollView>
 

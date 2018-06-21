@@ -1,19 +1,19 @@
 package com.example.mervatkhoury.mayclothes;
 
 import android.content.Intent;
-import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     ImageView ok;
-    int width;
-    public static int getScreenWidth() {
-        return Resources.getSystem().getDisplayMetrics().widthPixels;
-    }
+
+    public static String name;
+    public static String country;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,8 +23,11 @@ public class MainActivity extends AppCompatActivity {
         ok = (ImageView) findViewById(R.id.ok);
         addListenerOnButton();
 
-    width=getScreenWidth();
-
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            String name = extras.getString("name");
+            String country = extras.getString("country");
+        }
     }
 
     public void addListenerOnButton() {
@@ -33,11 +36,22 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View arg0) {
-                Intent i = new Intent(getApplicationContext(),com.example.mervatkhoury.mayclothes.ClothesScreen.class);
-                startActivity(i);
+
+                name= ((EditText)findViewById(R.id.input1)).getText().toString();
+                country= ((EditText)findViewById(R.id.input3)).getText().toString();
+                String town=((EditText)findViewById(R.id.input2)).getText().toString();
+                if(name.isEmpty()||country.isEmpty()||town.isEmpty()){
+                    Toast.makeText(MainActivity.this,"Please enter your details!",Toast.LENGTH_LONG).show();
+                }else{
+                    Intent i = new Intent(getApplicationContext(),com.example.mervatkhoury.mayclothes.ClothesScreen.class);
+                    startActivity(i);
+                }
+
+
             }
 
         });
 
     }
+
 }
